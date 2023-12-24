@@ -1,18 +1,21 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; 
 import { AppComponent } from './app.component';
-import { FlightSearchComponent } from './flight-search/flight-search.component';
+import { FlightSearchComponent } from './components/flight-search/flight-search.component';
+import { FlightListComponent } from './components/flight-list/flight-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FlightSearchComponent
+    FlightSearchComponent,
+    FlightListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

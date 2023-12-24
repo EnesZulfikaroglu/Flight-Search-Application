@@ -1,1 +1,21 @@
-<p>flight-search works!</p>
+<div class="flight-search">
+    <label>Departure Airport:</label>
+    <input [(ngModel)]="departureAirport" placeholder="Departure Airport" />
+  
+    <label>Arrival Airport:</label>
+    <input [(ngModel)]="arrivalAirport" placeholder="Arrival Airport" />
+  
+    <label>Departure Date:</label>
+    <input type="date" [(ngModel)]="departureDate" />
+  
+    <label *ngIf="!oneWay">Return Date:</label>
+    <input *ngIf="!oneWay" type="date" [(ngModel)]="returnDate" />
+  
+    <label>One Way Flight:</label>
+    <input type="checkbox" [(ngModel)]="oneWay" />
+  
+    <button (click)="searchFlights()">Search Flights</button>
+
+    <app-flight-list [flights]="flights"></app-flight-list>
+  </div>
+  

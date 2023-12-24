@@ -1,0 +1,14 @@
+.flight-search {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input, button {
+    margin-bottom: 10px;
+  }
+  
