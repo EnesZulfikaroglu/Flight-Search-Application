@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-// import { FlightModule } from './modules/flight/flight.module'; // Değişen satır
+import { FlightSearchComponent } from './flight-search/flight-search.component';
 
 @NgModule({
-  declarations: [AppComponent],
-imports: [BrowserModule, HttpClientModule, /*FlightModule*/], // FlightModule eklenen satır
-  bootstrap: [AppComponent],
+  declarations: [
+    AppComponent,
+    FlightSearchComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

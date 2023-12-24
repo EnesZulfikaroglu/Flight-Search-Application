@@ -6,12 +6,10 @@ describe('FlightSearchComponent', () => {
   let component: FlightSearchComponent;
   let fixture: ComponentFixture<FlightSearchComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [FlightSearchComponent]
-    })
-    .compileComponents();
-    
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [FlightSearchComponent]
+    });
     fixture = TestBed.createComponent(FlightSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
