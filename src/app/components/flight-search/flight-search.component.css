@@ -1,5 +1,5 @@
 .flight-search {
-    display: flex;
+    display: table-caption;
     flex-direction: column;
     max-width: 300px;
   }

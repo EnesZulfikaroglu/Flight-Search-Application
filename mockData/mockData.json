@@ -4,7 +4,7 @@
       "id": 1,
       "airline": "Turkish Airlines",
       "DepartureAirport": "IST", 
-      "arrivalAirport": "ANK", 
+      "arrivalAirport": "ESB", 
       "departureTime": "2023-01-01T12:00:00Z",
       "arrivalTime": "2023-01-01T13:00:00Z",
       "durationMinutes": 60,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "airline": "Pegasus Airlines",
-      "DepartureAirport": "IZM", 
+      "DepartureAirport": "ADB", 
       "arrivalAirport": "AYT", 
       "departureTime": "2023-01-02T14:00:00Z",
       "arrivalTime": "2023-01-02T15:30:00Z",

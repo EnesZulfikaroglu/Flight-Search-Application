@@ -1,21 +1,39 @@
 <div class="flight-search">
-    <label>Departure Airport:</label>
-    <input [(ngModel)]="departureAirport" placeholder="Departure Airport" />
-  
-    <label>Arrival Airport:</label>
-    <input [(ngModel)]="arrivalAirport" placeholder="Arrival Airport" />
-  
-    <label>Departure Date:</label>
-    <input type="date" [(ngModel)]="departureDate" />
-  
-    <label *ngIf="!oneWay">Return Date:</label>
-    <input *ngIf="!oneWay" type="date" [(ngModel)]="returnDate" />
-  
-    <label>One Way Flight:</label>
-    <input type="checkbox" [(ngModel)]="oneWay" />
-  
-    <button (click)="searchFlights()">Search Flights</button>
 
-    <app-flight-list [flights]="flights"></app-flight-list>
-  </div>
-  
+  <form [formGroup]="signUpForm" (ngSubmit)="onFormSubmit()">
+
+    <label>Departure Airport:</label>
+
+    <input list="airports" name="airports" formControlName="departureAirports">
+
+    <datalist id="airports">
+      <option *ngFor="let airport of airports">{{airport.city + " " +airport.code}} </option>
+    </datalist>
+
+    <label>Arrival Airport:</label>
+
+    <input list="airports" name="airports" formControlName="arrivalAirports">
+
+    <datalist id="airports" formControlName="departureAirport">
+      <option *ngFor="let Air of airports">{{Air.city+ " " + Air.code}} </option>
+    </datalist>
+
+
+    <label>Departure Date:</label>
+    <input type="date" formControlName="departureDate" />
+
+    <label *ngIf="!oneWay" style="display: block;">Return Date:</label>
+    <input *ngIf="!oneWay" type="date" formControlName="arrivalDate" />
+
+    <label style="display: inline-block;">One Way Flight:</label>
+    <input type="checkbox" (change)="updateState()" name="oneWay" [(ngModel)]="oneWay" />
+
+    <button type="submit">Search Flights</button>
+
+  </form>
+
+
+  <app-flight-list [flights]="filteredFlights"></app-flight-list>
+
+
+</div>
