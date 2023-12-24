@@ -100,6 +100,68 @@
         "durationMinutes": 45,
         "price": 100.0
       }
+    ],
+    "airports": [
+      {
+        "id": 1,
+        "code": "IST",
+        "city": "Istanbul",
+        "name": "Istanbul Ataturk Airport"
+      },
+      {
+        "id": 2,
+        "code": "SAW",
+        "city": "Istanbul",
+        "name": "Sabiha Gokcen International Airport"
+      },
+      {
+        "id": 3,
+        "code": "ADB",
+        "city": "Izmir",
+        "name": "Izmir Adnan Menderes Airport"
+      },
+      {
+        "id": 4,
+        "code": "ESB",
+        "city": "Ankara",
+        "name": "Esenboga Airport"
+      },
+      {
+        "id": 5,
+        "code": "AYT",
+        "city": "Antalya",
+        "name": "Antalya Airport"
+      },
+      {
+        "id": 6,
+        "code": "DLM",
+        "city": "Dalaman",
+        "name": "Dalaman Airport"
+      },
+      {
+        "id": 7,
+        "code": "BJV",
+        "city": "Bodrum",
+        "name": "Milas-Bodrum Airport"
+      },
+      {
+        "id": 8,
+        "code": "ASR",
+        "city": "Kayseri",
+        "name": "Kayseri Erkilet Airport"
+      },
+      {
+        "id": 9,
+        "code": "ADA",
+        "city": "Adana",
+        "name": "Adana Sakirpasa Airport"
+      },
+      {
+        "id": 10,
+        "code": "DLM",
+        "city": "Diyarbakir",
+        "name": "Diyarbakir Airport"
+      }
     ]
   }
   
